@@ -8,8 +8,7 @@
     </tr>
     <tr class="data-row" *ngFor = "let satellite of satellites" >
         <td>{{satellite.name}}</td>
-        <!-- <td [class.warning]="satellite.isSpaceDebris()">{{satellite.type}}</td>  -->
-        <td>{{satellite.type}}</td>
+        <td [class.warning]="satellite.isSpaceDebris()">{{satellite.type}}</td> 
         <td>{{satellite.operational}}</td>
         <td>{{satellite.orbitType}}</td>
         <td>{{satellite.launchDate}}</td>
@@ -20,4 +19,4 @@
 <!-- DONE -->
 
 <!-- TODO 3b: add style directive to conditionally highlight satellite type -->
-<!-- STUCK -->
+<!-- DONE -->
